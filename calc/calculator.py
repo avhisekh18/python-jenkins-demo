@@ -1,4 +1,5 @@
 def add(a , b):
+    print("Addition function called")
     return a+b
 
 def subtract(a , b):
