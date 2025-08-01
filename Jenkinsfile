@@ -17,7 +17,7 @@ pipeline {
         stage('Run Python App') {
             steps {
                 echo "Running the Python app..."
-                sh 'python main.py'
+                bat 'python main.py'
             }
         }
 
