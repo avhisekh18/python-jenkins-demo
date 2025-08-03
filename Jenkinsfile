@@ -17,7 +17,6 @@ pipeline {
         stage('Run Python App') {
             steps {
                 echo "Running the Python app..."
-                bat "dir"
                 bat'python calculator.py'
 
             }
