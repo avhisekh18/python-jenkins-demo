@@ -17,7 +17,8 @@ pipeline {
         stage('Run Python App') {
             steps {
                 echo "Running the Python app..."
-                bat'python calculator.py'
+                bat 'C:\\Users\\avhis\\AppData\\Local\\Programs\\Python\\Python313\\python.exe calculator.py'
+
 
             }
         }
