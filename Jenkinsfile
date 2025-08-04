@@ -25,7 +25,8 @@ pipeline {
 
         stage('Test') {
             steps {
-                echo "Testing code (if you have test cases)"
+                echo 'Running unit tests using pytest...'
+                bat 'C:/Users/avhis/AppData/Local/Programs/Python/Python313/python.exe -m pytest'
             }
         }
     }
