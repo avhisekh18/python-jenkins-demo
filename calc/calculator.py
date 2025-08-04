@@ -34,8 +34,8 @@ if __name__ == '__main__':
     
     choice = get_input("Enter choice (1/2/3/4): ")
 
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
+    num1 = float(get_input("Enter first number: "))
+    num2 = float(get_input("Enter second number: "))
 
     if choice == '1':
         print(f"The result is: {add(num1, num2)}")
