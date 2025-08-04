@@ -14,7 +14,11 @@ def divide(a , b):
         raise ValueError("cannot divide by 0")
     return a/b
 
+is_ci = os.environ.get('JENKINS_HOME') is not None
 def get_input(prompt, fallback =None):
+    if is_ci:
+        print(f"{prompt}[using default :{fallback}]")
+        return fallback
     try:
         return input (prompt)
     except EOFError:
